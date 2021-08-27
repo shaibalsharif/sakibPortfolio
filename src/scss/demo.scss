@@ -1,0 +1,87 @@
+body {
+  background: $body-background-color;
+  color: $foreground-color;
+  font-family: 'DINP-R', arial, serif;
+  font-size: 1.3em;
+  
+      #banner{
+        height: 200px;
+        background: url(../images/content/banner.png);
+        font-size: 3rem;
+        font-family: cursive;
+        text-align: center;
+        margin-top: 8px;
+        h1{
+          padding-top: 70px;
+        }
+      }
+      .container-body{
+        background-image: url(../images/content/logo.png);
+        height: 550px;
+      }
+      .footer{
+        height: 80px;
+        margin-bottom: 10px;
+      }
+
+}
+
+
+@keyframes octocat-wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-25deg);
+  }
+
+  40% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(-25deg);
+  }
+
+  80% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner {
+    &:hover {
+      .octo-arm {
+        animation: none;
+      }
+    }
+
+    .octo-arm {
+      animation: octocat-wave 560ms ease-in-out;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header,
+  main {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  main {
+    h1 {
+      font-size: 1.3em;
+    }
+
+    h2 {
+      font-size: 1.1em;
+    }
+  }
+}
